@@ -1,0 +1,6 @@
+{
+  "name": "Tardigrade: Slow Quest",
+  "description": "A tranquil 3D microscopic adventure and puzzle game following Tikhon the tardigrade from roof moss to the greenhouse oasis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

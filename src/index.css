@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0b1411;
+    color: #eef5ef;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    user-select: none;
+    touch-action: none;
+  }
+
+  button:focus-visible,
+  select:focus-visible,
+  input:focus-visible {
+    outline: 2px solid #88d8b0;
+    outline-offset: 2px;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom crisp scrollbar inside modals/drawers */
+.quest-scroll {
+  touch-action: pan-y;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(136, 216, 176, 0.35) transparent;
+}
+.quest-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.quest-scroll::-webkit-scrollbar-thumb {
+  background: rgba(136, 216, 176, 0.35);
+  border-radius: 3px;
+}
